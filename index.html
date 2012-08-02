@@ -7,8 +7,8 @@
 	
 	<body>
 	
-		<div class="flickrbg">
-			<img class="flickrbg" src="./img/background.jpg">
+		<div id="flickr" class="flickrbg">
+			<img class="flickrbg" src="./img/01.jpg">
 			
 		</div>
 		<div id="flickrinfo">
@@ -25,8 +25,13 @@
 			</div>
 			
 			<div id="playlistheading">PLAYLIST</div>
-			<div id="playlistadd">
-				+ ADD YOUR OWN
+			<a href="javascript:addSong()"><div id="playlistadd">+ ADD YOUR OWN</div></a>
+			<div id="playlistform" style="visibility: hidden;">
+				form goes here...
+				<br>
+				box for soundcloud stuff
+				<br>
+				<a href="javascript:submitForm()">done >></a>
 			</div>
 		</div>
 		
@@ -38,7 +43,7 @@
 			to your
 			<br>
 			<div id="moment">
-				first kiss?
+				first kiss <a href=""><img src="./img/search.png" border="0"></a> ?
 			</div>
 		</div>
 	

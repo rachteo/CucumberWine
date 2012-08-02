@@ -50,7 +50,7 @@ body {
 #playlistheading {
 	position: fixed;
 	width: 425px;
-	background: rgba( 255, 255, 255, 0.4 );
+	background: rgba( 255, 255, 255, 0.8 );
 	text-align: center;
 	color: #000;
 	text-transform: uppercase;
@@ -63,14 +63,27 @@ body {
 }
 #playlistadd {
 	position: fixed;
-	background: rgba( 255, 255, 255, 0.4 );
+	width: 425px;
+	text-align: center;
+	background: rgba( 255, 255, 255, 0.8 );
 	bottom: 0;
 	border-top: 1px solid #000000;
 }
+#playlistform {
+	position: fixed;
+	width: 425px;
+	bottom: 60px;
+	background: rgba( 255, 255, 255, 0.8);
+}
+#playlistform > a {
+	color: #000;
+}
 #playlistembeds {
 	position: absolute;
+	width: 100%;
 	top: 120;
-	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 #soundtrack {
